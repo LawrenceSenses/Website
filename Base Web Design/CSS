@@ -1,58 +1,106 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Senses - Home</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">
-                <a href="#">Senses</a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section class="hero">
-        <h1>Welcome to Senses</h1>
-        <p>Your source for sensory experiences</p>
-        <a href="#" class="cta-button">Explore</a>
-    </section>
-    
-    <section class="about">
-        <h2>About Us</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in justo et lorem feugiat hendrerit. Sed tincidunt volutpat eros, eget sollicitudin lectus.</p>
-    </section>
-    
-    <section class="services">
-        <h2>Our Services</h2>
-        <div class="service">
-            <h3>Service 1</h3>
-            <p>Description of Service 1.</p>
-        </div>
-        <div class="service">
-            <h3>Service 2</h3>
-            <p>Description of Service 2.</p>
-        </div>
-        <!-- Add more services as needed -->
-    </section>
-    
-    <section class="contact">
-        <h2>Contact Us</h2>
-        <p>Get in touch with us for any inquiries or to book our services.</p>
-        <a href="#" class="cta-button">Contact</a>
-    </section>
-    
-    <footer>
-        <p>&copy; 2023 Senses. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+/* Reset some default styles */
+html, body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo a {
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #555;
+}
+
+.about, .services, .contact {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.about h2, .services h2, .contact h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.service {
+    margin-bottom: 20px;
+}
+
+.service h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+}
